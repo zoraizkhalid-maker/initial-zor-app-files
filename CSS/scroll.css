@@ -1,0 +1,23 @@
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s ease; 
+}
+
+#backToTopBtn:hover {
+    background-color: black; 
+}
+
+
+body:hover #backToTopBtn {
+    display: block; 
+}
