@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/about.css">
+    <link rel="stylesheet" href="CSS/card.css">
+    <link rel="stylesheet" href="CSS/scroll.css">
+    <link rel="icon" type="image/png" href="IMAGES/ZOR app logo.png">
+    <title>ZOR</title>
+</head>
+
+<body>
+
+    <button id="backToTopBtn" onclick="scrollToTop()" title="Scroll to Top">اوپر</button>
+
+    <div class="container">
+
+        <div class="logo-title">
+            <div class="logo"><img src="IMAGES/ZOR app logo.png" alt="ZOR App Logo"></div>
+            <div class="title">&nbsp;ZOR</div>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html" title="آغاز - Home">آغاز</a>
+            <a href="lessons.html" title="سبق - Lessons">سبق</a>
+            <a href="#contact" title="ہم سے رابطہ کریں - Contact us">ہم سے رابطہ کریں</a>
+        </nav>
+
+    </div>
+
+    <section id="greetings">
+        <div class="greetings-container">
+            <p>Hello, <span id="userName"></span></p>
+            <p>السلام علیکم, <span id="userNameArabic"></span></p>
+        </div>
+    </section>
+
+
+    <div class="center-card" onclick="redirectTo('lesson-1.html')">
+        <img src="IMAGES/basics of cs course background.png" alt="Card Image">
+        <h2>کمپیوٹر سائنس کی بنیادی باتیں</h2>
+        <p>Basics of computer science</p>
+    </div>
+
+    <div class="center-card" onclick="redirectTo('lesson-2.html')">
+        <img src="IMAGES/Python course background.png" alt="Card Image">
+        <h2>پائتھن پروگرامنگ</h2>
+        <p>Python Programming</p>
+    </div>
+
+    <div class="center-card" onclick="redirectTo('link_to_third_card_website.html')">
+        <img src="IMAGES/coming soon.png" alt="Card Image">
+        <h2>جلد آرہا ہے</h2>
+        <p>Coming soon!</p>
+    </div>
+
+
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p>(ای میل) Email: <a href="mailto:zortheapp@gmail.com">zortheapp@gmail.com</a></p>
+            </div>
+            <div class="contact-message">
+                <p>Got questions or feedback? We're here to help! Reach out to us through the Contact Us section. Your
+                    thoughts matter, and we're eager to assist you on your coding journey. Whether you need technical
+                    support, have suggestions, or just want to say hello, drop us a message, and we'll get back to you
+                    as soon as possible. Let's code together!</p>
+                <p>سوالات یا تاثرات ہیں؟ ہم مدد کے لیے حاضر ہیں! ہمارے ای میل کے ذریعے ہم سے رابطہ کریں۔ آپ کے خیالات
+                    اہم ہیں، اور ہم آپ کے کوڈنگ کے سفر میں آپ کی مدد کے لیے بے چین ہیں۔ چاہے آپ کو تکنیکی مدد کی ضرورت
+                    ہو، تجاویز چاہیں، یا صرف ہیلو کہنے کے لیے، ہمیں ایک پیغام بھیجیں، اور ہم جلد از جلد آپ سے رابطہ کریں
+                    گے۔ آئیے ایک ساتھ کوڈ کریں</p>
+            </div>
+            <div class="founder">
+                <h2>Meet the Founder</h2>
+                <!-- Placeholder for founder's text and image -->
+                <div class="founder-details">
+                    <img src="IMAGES/founder.png" alt="Founder Image">
+                    <p>Introducing Zoraiz, the driving force behind our platform. A Lahore Grammar School student,
+                        deeply committed to bringing coding to everyone. Zoraiz isn't just passionate; he's a vibrant
+                        public speaker and aspiring game developer. Embark on this journey with him to make coding
+                        education inclusive for all.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="JAVASCRIPT/script.js"></script>
+</body>
+
+</html>

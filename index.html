@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/login.css">
+    <link rel="stylesheet" href="CSS/scroll.css">
+    <link rel="stylesheet" href="CSS/imagecard.css">
+    <link rel="icon" type="image/png" href="IMAGES/ZOR app logo.png">
+    <title>ZOR</title>
+</head>
+
+<body>
+
+    <button id="backToTopBtn" onclick="scrollToTop()" title="Scroll to Top">اوپر</button>
+
+    <div class="container">
+
+        <div class="logo-title">
+            <div class="logo"><img src="IMAGES/ZOR app logo.png" alt="ZOR App Logo"></div>
+            <div class="title">&nbsp;ZOR</div>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html" title="آغاز - Home">آغاز</a>
+            <a href="lessons.html" title="سبق - Lessons">سبق</a>
+            <a href="#contact" title="ہم سے رابطہ کریں - Contact us">ہم سے رابطہ کریں</a>
+        </nav>
+
+    </div>
+
+    <div class="heading">
+        <p>Unlock the World of Coding: ZOR - Your Gateway to Computer Science Learning in Urdu!</p>
+        <p> کوڈنگ کی دنیا کو دریافت کریں: زور - اردو میں کمپیوٹر سائنس سیکھنے کا آپ کا ذریعہ</p>
+
+    </div>
+
+    <section id="login">
+
+        <div class="text-container">
+            <p>Our mission at ZOR, rooted in Pakistan, is to break down language barriers and provide free access to
+                computer science education, in Urdu. In a country where language often hinders the underprivileged
+                from accessing quality learning, and where limited knowledge of instructors can be a hindrance, we
+                strive to bridge the gap. We believe that everyone, regardless of their background, deserves the
+                opportunity to unlock the world of coding. Join us on the journey to make computer science learning
+                accessible to all, fostering a community of empowered minds in the digital age.</p>
+
+            <p>زور پر ہمارا مشن، زبان کی رکاوٹوں کو ختم کرنا اور اردو میں کمپیوٹر سائنس کی تعلیم تک مفت رسائی فراہم
+                کرنا ہے۔ ایک ایسے ملک میں جہاں زبان اکثر پسماندہ افراد کو معیاری تعلیم تک رسائی میں رکاوٹ بنتی ہے،
+                اور جہاں انسٹرکٹرز کا محدود علم رکاوٹ بن سکتا ہے، ہم اس خلا کو پر کرنے کی کوشش کرتے ہیں۔ ہمیں یقین
+                ہے کہ ہر کوئی، اس کے پس منظر سے قطع نظر، کوڈنگ کی دنیا کو کھولنے کے موقع کا مستحق ہے۔ ڈیجیٹل دور میں
+                بااختیار ذہنوں کی کمیونٹی کو فروغ دیتے ہوئے، کمپیوٹر سائنس سیکھنے کو سب کے لیے قابل رسائی بنانے کے
+                سفر میں ہمارے ساتھ شامل ہوں۔</p>
+        </div>
+
+        <div class="login-container">
+            <h2>Login</h2>
+            <h4 title="Please enter your first and last name to get started">شروع کرنے کے لیے براہ کرم اپنا پہلا اور
+                آخری نام درج کریں۔</h4>
+            <form id="loginForm">
+                <label for="firstName" title="First Name">پہلا نام:</label>
+                <input type="text" id="firstName" name="random1" required>
+
+                <label for="lastName" title="Last Name">آخری نام:</label>
+                <input type="text" id="lastName" name="random2" required>
+
+                <button type="button" onclick="login()">Login</button>
+            </form>
+        </div>
+
+    </section>
+
+    <div class="content">
+        <div class="image-grid">
+            <div class="image-card">
+                <img src="IMAGES/Extra/Image 1.jpg">
+            </div>
+            <div class="image-card">
+                <img src="IMAGES/Extra/Image 2.jpg">
+            </div>
+            <div class="image-card">
+                <img src="IMAGES/Extra/Image 3.jpg">
+            </div>
+            <div class="image-card">
+                <img src="IMAGES/Extra/Image 4.jpg">
+            </div>
+            <div class="image-card">
+                <img src="IMAGES/Extra/Image 5.jpg">
+            </div>
+            <div class="image-card">
+                <img src="IMAGES/Extra/Image 6.jpg">
+            </div>
+            <div class="image-card">
+                <img src="IMAGES/Extra/Image 7.jpg">
+            </div>
+            <div class="image-card">
+                <img src="IMAGES/Extra/Image 8.jpg">
+            </div>
+            <div class="image-card">
+                <img src="IMAGES/Extra/Image 9.jpg">
+            </div>
+        </div>
+
+    </div>
+
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p>(ای میل) Email: <a href="mailto:zortheapp@gmail.com">zortheapp@gmail.com</a></p>
+            </div>
+            <div class="contact-message">
+                <p>Got questions or feedback? We're here to help! Reach out to us through the Contact Us section. Your
+                    thoughts matter, and we're eager to assist you on your coding journey. Whether you need technical
+                    support, have suggestions, or just want to say hello, drop us a message, and we'll get back to you
+                    as soon as possible. Let's code together!</p>
+                <p>سوالات یا تاثرات ہیں؟ ہم مدد کے لیے حاضر ہیں! ہمارے ای میل کے ذریعے ہم سے رابطہ کریں۔ آپ کے خیالات
+                    اہم ہیں، اور ہم آپ کے کوڈنگ کے سفر میں آپ کی مدد کے لیے بے چین ہیں۔ چاہے آپ کو تکنیکی مدد کی ضرورت
+                    ہو، تجاویز چاہیں، یا صرف ہیلو کہنے کے لیے، ہمیں ایک پیغام بھیجیں، اور ہم جلد از جلد آپ سے رابطہ کریں
+                    گے۔ آئیے ایک ساتھ کوڈ کریں</p>
+            </div>
+            <div class="founder">
+                <h2>Meet the Founder</h2>
+                <div class="founder-details">
+                    <img src="IMAGES/founder.png" alt="Founder Image">
+                    <p>Introducing Zoraiz, the driving force behind our platform. A Lahore Grammar School student,
+                        deeply committed to bringing coding to everyone. Zoraiz isn't just passionate; he's a vibrant
+                        public speaker and aspiring game developer. Embark on this journey with him to make coding
+                        education inclusive for all.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="JAVASCRIPT/script.js"></script>
+</body>
+
+</html>

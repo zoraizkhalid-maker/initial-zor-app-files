@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/scroll.css">
+    <link rel="stylesheet" href="CSS/questions-card.css">
+    <link rel="icon" type="image/png" href="IMAGES/ZOR app logo.png">
+    <title>ZOR</title>
+</head>
+
+<body>
+
+    <button id="backToTopBtn" onclick="scrollToTop()" title="Scroll to Top">اوپر</button>
+
+    <div class="container">
+
+        <div class="logo-title">
+            <div class="logo"><img src="IMAGES/ZOR app logo.png" alt="ZOR App Logo"></div>
+            <div class="title">&nbsp;ZOR</div>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html" title="آغاز - Home">آغاز</a>
+            <a href="lessons.html" title="سبق - Lessons">سبق</a>
+            <a href="#contact" title="ہم سے رابطہ کریں - Contact us">ہم سے رابطہ کریں</a>
+        </nav>
+
+    </div>
+
+    <div class="lesson-heading">
+        <p>کمپیوٹر سائنس کی بنیادی باتیں</p>
+        <p>Basics of computer science</p>
+    </div>
+
+
+    <div class="content">
+        <div class="pdf-container">
+            <embed src="PDFs/Computer science.pdf" type="application/pdf"/>
+        </div>
+
+        <div class="quiz-container" id="Q1">
+            <div class="question" id="question">کوڈ میں تبصرے کا استعمال کرنے کا اصل مقصد کیا ہے؟</div>
+            <div class="options" id="options">
+                <button class="option" onclick="checkAnswer('پروگرامرز کو الجھانا', 'Q1')">پروگرامرز کو الجھانا</button>
+                <button class="option" onclick="checkAnswer('کوڈ کو رنگین بنانا', 'Q1')">کوڈ کو رنگین بنانا</button>
+                <button class="option" onclick="checkAnswer('وضاحتیں اور نوٹس فراہم کرنا', 'Q1')">وضاحتیں اور نوٹس فراہم کرنا</button>
+                <button class="option" onclick="checkAnswer('خطا بنانا', 'Q1')">خطا بنانا</button>
+            </div>
+            <div id="Q1-result"></div>
+        </div>        
+        <div class="quiz-container" id="Q2">
+            <div class="question" id="question">ذیل میں سے کون سا پائتھن بلٹ ان فعل نہیں ہے؟</div>
+            <div class="options" id="options">
+                <button class="option" onclick="checkAnswer('print()', 'Q2')">print()</button>
+                <button class="option" onclick="checkAnswer('input()', 'Q2')">input()</button>
+                <button class="option" onclick="checkAnswer('jump()', 'Q2')">jump()</button>
+                <button class="option" onclick="checkAnswer('len()', 'Q2')">len()</button>
+            </div>
+            <div id="Q2-result"></div>
+        </div>
+        
+        <div class="quiz-container" id="Q3">
+            <div class="question" id="question">پروگرامنگ میں متغیر کیا ہوتا ہے؟</div>
+            <div class="options" id="options">
+                <button class="option" onclick="checkAnswer('ایک علامتی نام کے ساتھ ایک ذخیرہ کرنے کا مقام', 'Q3')">ایک علامتی نام کے ساتھ ایک ذخیرہ کرنے کا مقام</button>
+                <button class="option" onclick="checkAnswer('ایک مستقر قیمت', 'Q3')">ایک مستقر قیمت</button>
+                <button class="option" onclick="checkAnswer('ایک قسم کا تبصرہ', 'Q3')">ایک قسم کا تبصرہ</button>
+                <button class="option" onclick="checkAnswer('پروگرامنگ خطا', 'Q3')">پروگرامنگ خطا</button>
+            </div>
+            <div id="Q3-result"></div>
+        </div>
+        
+        <div class="quiz-container" id="Q4">
+            <div class="question" id="question">یہ کوڈ کا ایک مجموعہ بیانات کا تکراری اجراء ہوتا ہے، یہ کیا ہے؟</div>
+            <div class="options" id="options">
+                <button class="option" onclick="checkAnswer('جمپ', 'Q4')">جمپ</button>
+                <button class="option" onclick="checkAnswer('انسداد', 'Q4')">انسداد</button>
+                <button class="option" onclick="checkAnswer('اسپرنٹ', 'Q4')">اسپرنٹ</button>
+                <button class="option" onclick="checkAnswer('باؤنس', 'Q4')">باؤنس</button>
+            </div>
+            <div id="Q4-result"></div>
+        </div>
+        
+        <div class="quiz-container" id="Q5">
+            <div class="question" id="question">پائتھن میں range() فعل کا مقصد کیا ہے؟</div>
+            <div class="options" id="options">
+                <button class="option" onclick="checkAnswer('ایک اعداد کی فہرست بنانا', 'Q5')">ایک اعداد کی فہرست بنانا</button>
+                <button class="option" onclick="checkAnswer('کوڈ کی لمبائی کا تعین کرنا', 'Q5')">کوڈ کی لمبائی کا تعین کرنا</button>
+                <button class="option" onclick="checkAnswer('کوڈ کے رنگ کو معین کرنا', 'Q5')">کوڈ کے رنگ کو معین کرنا</button>
+                <button class="option" onclick="checkAnswer('کوڈ کو دکھانا', 'Q5')">کوڈ کو دکھانا</button>
+            </div>
+            <div id="Q5-result"></div>
+        </div>
+        
+        <div class="quiz-container" id="Q6">
+            <div class="question" id="question">پروگرامنگ میں if بیان کو ہٹانا کیا ہے؟</div>
+            <div class="options" id="options">
+                <button class="option" onclick="checkAnswer('ایک لوپ', 'Q6')">ایک لوپ</button>
+                <button class="option" onclick="checkAnswer('ایک شرطی بیان', 'Q6')">ایک شرطی بیان</button>
+                <button class="option" onclick="checkAnswer('ایک تبصرہ', 'Q6')">ایک تبصرہ</button>
+                <button class="option" onclick="checkAnswer('ایک خطا کا پیغام', 'Q6')">ایک خطا کا پیغام</button>
+            </div>
+            <div id="Q6-result"></div>
+        </div>
+        
+        <div class="quiz-container" id="Q7">
+            <div class="question" id="question">ذیل میں سے کون سا ایک کوڈ بلاک ہے؟</div>
+            <div class="options" id="options">
+                <button class="option" onclick="checkAnswer('ایک کوڈ کا ایک لائن', 'Q7')">ایک کوڈ کا ایک لائن</button>
+                <button class="option" onclick="checkAnswer('وہ بیانات جو مل کر ایک ساتھ چلتے ہیں', 'Q7')">وہ بیانات جو مل کر ایک ساتھ چلتے ہیں</button>
+                <button class="option" onclick="checkAnswer('ایک متغیر کا بیان', 'Q7')">ایک متغیر کا بیان</button>
+                <button class="option" onclick="checkAnswer('ایک پائتھن فعل', 'Q7')">ایک پائتھن فعل</button>
+            </div>
+            <div id="Q7-result"></div>
+        </div>
+        
+        <div class="quiz-container" id="Q8">
+            <div class="question" id="question">پائتھن میں len() فعل کا مقصد ہے؟</div>
+            <div class="options" id="options">
+                <button class="option" onclick="checkAnswer('ایک سٹرنگ یا لسٹ کی لمبائی (length) حاصل کرنا', 'Q8')">ایک سٹرنگ یا لسٹ کی لمبائی (length) حاصل کرنا</button>
+                <button class="option" onclick="checkAnswer('ایک مخصوص عدد کی قیمت حاصل کرنا', 'Q8')">ایک مخصوص عدد کی قیمت حاصل کرنا</button>
+                <button class="option" onclick="checkAnswer('کسی بھی قسم کا خود تخلیقی تفصیلات دینا', 'Q8')">کسی بھی قسم کا خود تخلیقی تفصیلات دینا</button>
+                <button class="option" onclick="checkAnswer('لوگوں کے درمیان مواصلات کو ممکن بنانا', 'Q8')">لوگوں کے درمیان مواصلات کو ممکن بنانا</button>
+            </div>
+            <div id="Q8-result"></div>
+        </div>
+        
+        <div class="quiz-container" id="Q9">
+            <div class="question" id="question">پائتھن میں input() فعل کا کیا کام ہے؟</div>
+            <div class="options" id="options">
+                <button class="option" onclick="checkAnswer('ایک پروگرام کا اوٹپٹ چھاپتا ہے', 'Q9')">ایک پروگرام کا اوٹپٹ چھاپتا ہے</button>
+                <button class="option" onclick="checkAnswer('صارف کی ان پٹ لیتا ہے', 'Q9')">صارف کی ان پٹ لیتا ہے</button>
+                <button class="option" onclick="checkAnswer('خطا پیدا ہوتا ہے', 'Q9')">خطا پیدا ہوتا ہے</button>
+                <button class="option" onclick="checkAnswer('اگلی لائن پر چھلنا', 'Q9')">اگلی لائن پر چھلنا</button>
+            </div>
+            <div id="Q9-result"></div>
+        </div>
+        
+        <div class="quiz-container" id="Q10">
+            <div class="question" id="question">ذیل میں سے کون سا صحیح پائتھن کوڈ ہے؟</div>
+            <div class="options" id="options">
+                <button class="option" onclick="checkAnswer('if x > 5:', 'Q10')">if x > 5:</button>
+                <button class="option" onclick="checkAnswer('loop x > 5:', 'Q10')">loop x > 5:</button>
+                <button class="option" onclick="checkAnswer('print x > 5;', 'Q10')">print x > 5;</button>
+                <button class="option" onclick="checkAnswer('variable x > 5:', 'Q10')">variable x > 5:</button>
+            </div>
+            <div id="Q10-result"></div>
+        </div>
+        
+    </div>
+
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p>(ای میل) Email: <a href="mailto:zortheapp@gmail.com">zortheapp@gmail.com</a></p>
+            </div>
+            <div class="contact-message">
+                <p>Got questions or feedback? We're here to help! Reach out to us through the Contact Us section. Your
+                    thoughts matter, and we're eager to assist you on your coding journey. Whether you need technical
+                    support, have suggestions, or just want to say hello, drop us a message, and we'll get back to you
+                    as soon as possible. Let's code together!</p>
+                <p>سوالات یا تاثرات ہیں؟ ہم مدد کے لیے حاضر ہیں! ہمارے ای میل کے ذریعے ہم سے رابطہ کریں۔ آپ کے خیالات
+                    اہم ہیں، اور ہم آپ کے کوڈنگ کے سفر میں آپ کی مدد کے لیے بے چین ہیں۔ چاہے آپ کو تکنیکی مدد کی ضرورت
+                    ہو، تجاویز چاہیں، یا صرف ہیلو کہنے کے لیے، ہمیں ایک پیغام بھیجیں، اور ہم جلد از جلد آپ سے رابطہ کریں
+                    گے۔ آئیے ایک ساتھ کوڈ کریں</p>
+            </div>
+            <div class="founder">
+                <h2>Meet the Founder</h2>
+                <div class="founder-details">
+                    <img src="IMAGES/founder.png" alt="Founder Image">
+                    <p>Introducing Zoraiz, the driving force behind our platform. A Lahore Grammar School student,
+                        deeply committed to bringing coding to everyone. Zoraiz isn't just passionate; he's a vibrant
+                        public speaker and aspiring game developer. Embark on this journey with him to make coding
+                        education inclusive for all.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="JAVASCRIPT/script.js"></script>
+    <script src="JAVASCRIPT/quiz-1.js"></script>
+</body>
+
+</html>
